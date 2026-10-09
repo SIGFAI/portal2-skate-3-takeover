@@ -1,0 +1,300 @@
+{
+  "id": "sigf/portal2-skate-3-takeover",
+  "version": "1.0.0",
+  "name": "Skate 3 Takeover",
+  "tagline": "Bring Skate 3 into the game in the most visible and funny way. The change shows in the first 30 seconds of play.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "portal2",
+      "role": "host",
+      "engine": "Portal 2 (Source, 32 bits) + VScript (Squirrel 2.2)",
+      "apps": {
+        "steam": "620"
+      }
+    },
+    {
+      "game": "skate3",
+      "role": "guest",
+      "label": "Skate 3",
+      "canonical": false
+    }
+  ],
+  "requires": [],
+  "install": [
+    {
+      "game": "portal2",
+      "strategy": "args",
+      "files": [
+        {
+          "src": "portal2-skate-3-takeover.zip",
+          "dst": "{game}/sigf_skate_3_takeover",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "cfg/sk_jump.cfg",
+              "sha256": "1941df709f96d35a61004fff2c35d753c205fa5fc426db2bbf4a3f8ef090e21f"
+            },
+            {
+              "path": "materials/sigf/ov_bolt.vmt",
+              "sha256": "a80502d49cec62913a8e4a70874942c09ddacb08afb5ce9829166487f12f1a4e"
+            },
+            {
+              "path": "materials/sigf/ov_bolt.vtf",
+              "sha256": "957a513f1403de5e6a1cfb152ab197b0a683f0cf79f1a7fdb1cf19bfd428a05d"
+            },
+            {
+              "path": "materials/sigf/ov_burst.vmt",
+              "sha256": "354386a4d0fbf2cb62e71fdcc937281aa63256974f258ee863c6ab519fb34d85"
+            },
+            {
+              "path": "materials/sigf/ov_burst.vtf",
+              "sha256": "3227e2d77907692986fd5bccaf420ca790042f00495a4b4da673b6439bccd693"
+            },
+            {
+              "path": "materials/sigf/ov_red.vmt",
+              "sha256": "fe7b7ec65ea7d89a2cde7223e2a66bc5313ddcf1f4ed0b8029b0427476840de3"
+            },
+            {
+              "path": "materials/sigf/ov_red.vtf",
+              "sha256": "f6cf643aef2e3c46c971f3d25f2c0b96f5127e78ef08a4c11cb3f675356ae927"
+            },
+            {
+              "path": "materials/sigf/ov_sick.vmt",
+              "sha256": "47ffb7f093b6ee9b50d4e17296a68801ff84277b155339eaa5fa3b502f240a96"
+            },
+            {
+              "path": "materials/sigf/ov_sick.vtf",
+              "sha256": "a1a60c31c62c97b855b9a2b3fcbebe6bb836bec1fc10a266128a918779d71e01"
+            },
+            {
+              "path": "materials/sigf/ov_sk8.vmt",
+              "sha256": "6b8f3391cfb3caf83251c134a5efb5a61f5dbd806052e0694f5e5b86d7ee97d3"
+            },
+            {
+              "path": "materials/sigf/ov_sk8.vtf",
+              "sha256": "9dbc9de1884058f25710c108d9a1db4f0fdf11fb35f08f6bee56cfd3befb5f22"
+            },
+            {
+              "path": "materials/sigf/ov_skull.vmt",
+              "sha256": "c66be48609e43d0eb1e7f8c97efda6c4d5bfdb604ba3d1c841184c11c52474e5"
+            },
+            {
+              "path": "materials/sigf/ov_skull.vtf",
+              "sha256": "831d18bd88329a9dd9749bae5653318ce116229bb053bbb98f4a0a6dd03ec155"
+            },
+            {
+              "path": "materials/sigf/ov_star.vmt",
+              "sha256": "d80d9de36163b3bf1bb588b93cdd5dae1f823f48be00d6c53be5a3bc24c4ba54"
+            },
+            {
+              "path": "materials/sigf/ov_star.vtf",
+              "sha256": "d2b56854dabfb380d38bdfb4d3533abc7dd1e870dd5aeede6b658571b2c906c3"
+            },
+            {
+              "path": "materials/sigf/ov_title.vmt",
+              "sha256": "5ba5da5400ab1619acd3e7b1f24cb3350b752233a7ea494aace643404c4fd4ec"
+            },
+            {
+              "path": "materials/sigf/ov_title.vtf",
+              "sha256": "91cee6a9c2901d8ad3a516c35b560cad170af7f2f463e467ca6148869692bf50"
+            },
+            {
+              "path": "materials/sigf/ov_xray.vmt",
+              "sha256": "fdd371ffd60fa2399e2a008269255a17da0f8e0cebf6f3c69dab26f21b03fbb8"
+            },
+            {
+              "path": "materials/sigf/ov_xray.vtf",
+              "sha256": "f992678ed69eeb3e42237fbdeec3360cf21cf1e0d4acd579d06eec920dca098b"
+            },
+            {
+              "path": "scripts/vscripts/sigf_demo.nut",
+              "sha256": "e69efb460264e6fc4164f7f8f37b6121d97a488000bbe2da46f60572b3c96784"
+            },
+            {
+              "path": "scripts/vscripts/sigf_mod.nut",
+              "sha256": "d51bf2e995ebf6f4a90376e099e386017f9c4d6dbcbb1685d7d32c117e5ced38"
+            },
+            {
+              "path": "scripts/vscripts/sigf_park.nut",
+              "sha256": "4db3f296859022b2c4c921daada9b4430bae0f22f68d8dce4abe807b6afb3b97"
+            },
+            {
+              "path": "scripts/vscripts/sigf_skate.nut",
+              "sha256": "efed1f8a87abb488c5ea01cf7b08e2ed43f056faab0eec47626cd88212ce28ab"
+            },
+            {
+              "path": "scripts/vscripts/sigf_skaters.nut",
+              "sha256": "5cf6e0ee0a7e8a50a745c87c5fa19baad11780ec41f20f1dd930c7cf9072d09d"
+            },
+            {
+              "path": "scripts/vscripts/sigf_spawn.nut",
+              "sha256": "2940fcb2abdab03040bc1667c1b97fbb44f2125acf0f6c845ead0ddd9fbe912d"
+            },
+            {
+              "path": "sound/sigf/bail.wav",
+              "sha256": "49569ab9add73d5cba7b349629095853be830a655107de0c9542050f56629f31"
+            },
+            {
+              "path": "sound/sigf/cheer.wav",
+              "sha256": "e0ed2ef24b2988155612872a4588580f3e4bdf28c21ae97b6a3d4e47d3bc2fd0"
+            },
+            {
+              "path": "sound/sigf/crowd_ooh.wav",
+              "sha256": "d5fd9cd023f8c22f7d61c128a83b5ddf94c463577b1887ea3d38403111586446"
+            },
+            {
+              "path": "sound/sigf/grind.wav",
+              "sha256": "05881b01a03b609dd05fdd01f5f8a0234b0788652173576cbaf20b776c6cd601"
+            },
+            {
+              "path": "sound/sigf/land.wav",
+              "sha256": "998974531bc4cd70d4ed4780ef9fcd34a4e7f8c2f5ba7b49ff8d25014a0b5c5c"
+            },
+            {
+              "path": "sound/sigf/music.wav",
+              "sha256": "6d1820fa50c2b28cd639fb0d86d96d02134fd3498cc6b80bd63abbc2051edf39"
+            },
+            {
+              "path": "sound/sigf/ollie_pop.wav",
+              "sha256": "dc234cbaec341a913a9d7c628b72535ae3e5058a89fe11c5fc24b23c8c88d842"
+            },
+            {
+              "path": "sound/sigf/roll.wav",
+              "sha256": "5401ffd3cbb837cf4f5bc7c996afbddf25f11f44c8fea7bf6728b77b36e187c5"
+            },
+            {
+              "path": "sound/sigf/trick_win.wav",
+              "sha256": "1b5fd7dd7a237d9f50cddb8b37b7005cc5e8328b31d2fc0febb87af4e69075c9"
+            },
+            {
+              "path": "sound/sigf/v_gnarly.wav",
+              "sha256": "b04385a7e2d5910a68790969b20023cd50d1eacde60361ac8639b4b6db674e93"
+            },
+            {
+              "path": "sound/sigf/v_nailed.wav",
+              "sha256": "5cefea9210c015442697b305f69560ce5b61436a9bf7e150771300f6ab3e61bf"
+            },
+            {
+              "path": "sound/sigf/v_ouch.wav",
+              "sha256": "7475be1ce9f61b8e8aa7582cbc8b7f72b2a3ae136b2280920b2d287b1574a250"
+            },
+            {
+              "path": "sound/sigf/v_sick.wav",
+              "sha256": "a458f4ddd7a0b1ce218a620f0c878a15389f31b10d98fb396bb149872baf612b"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/portal2-skate-3-takeover/releases/download/v1.0.0/portal2-skate-3-takeover.zip",
+          "sha256": "c99d4629a130677550d87e2f102559bceb3f7b59359c8aa88c393ae565ccca9f",
+          "size": 8976399
+        },
+        {
+          "src": "portal2-skate-3-takeover-game-kit.zip",
+          "dst": "{game}/sigf_skate_3_takeover",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "cfg/sigf_game.cfg",
+              "sha256": "646e1adf53ef90b3a0939de5d756e66face5610db42b4c644ba5fb934833f7dd"
+            },
+            {
+              "path": "cfg/sigf_rec.cfg",
+              "sha256": "e7815e54ae79bbb159a36435022750280ad2992ece2c2a9b570c6ff4db184cca"
+            },
+            {
+              "path": "gameinfo.txt",
+              "sha256": "509c58bbd5a477768b3e34f3a6dba6d9d6e7507715bb72606b841872e73f2539"
+            },
+            {
+              "path": "materials/sigf/kit_portal_blue.vmt",
+              "sha256": "b5b5a1f62c170477fdf0cb523b21c3da397a85b0cad470e2e8e90a61763200f4"
+            },
+            {
+              "path": "materials/sigf/kit_portal_blue.vtf",
+              "sha256": "66a14c89c2fa080aea7953d6d741f55025f339416b713aaafadd5f54d15a7ecf"
+            },
+            {
+              "path": "materials/sigf/kit_portal_orange.vmt",
+              "sha256": "d745e5b8629577b7ece072a1135cda1edbd9562c364e2641d45599b58853c45a"
+            },
+            {
+              "path": "materials/sigf/kit_portal_orange.vtf",
+              "sha256": "8b87f69add0d1849d8bdc06d5e1135531517150a0173d44bdefb7e293c7c9358"
+            },
+            {
+              "path": "resource/sigf_english.txt",
+              "sha256": "f7b337c03f5140fd29e7f15a149da6d5233b5e8ad2b1d8e7fcd0c017a231cea3"
+            },
+            {
+              "path": "scripts/vscripts/mapspawn.nut",
+              "sha256": "0a1139812204d68668448646e5fd2e5b931e1ddaa680c46cb132c864decd33d2"
+            },
+            {
+              "path": "scripts/vscripts/sigf_bricks.nut",
+              "sha256": "7ed4c45d7c3859ef3b4bb61191f52ca9fad78326de0fad76a719a170777e4332"
+            },
+            {
+              "path": "scripts/vscripts/sigf_idle.nut",
+              "sha256": "058ebd51ad50186353a76e92c22edc3adfdca80e2d93cc2f5c8b4234c7e0defc"
+            },
+            {
+              "path": "scripts/vscripts/sigf_lib.nut",
+              "sha256": "6ed86926ac93d6356b96c64679780834509262a6ead553b66285ef0f0f89e13f"
+            },
+            {
+              "path": "scripts/vscripts/sigf_mode.nut",
+              "sha256": "b2f2524f92d28a7bcc12921baebee0ad449e36db7cd9d8ff8d6de6ff57591beb"
+            },
+            {
+              "path": "scripts/vscripts/sigf_stage.nut",
+              "sha256": "6c9e841b49c906bd8b44608d30d054d07371995dfc1b03f0a593635b174e59f4"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/portal2-skate-3-takeover/releases/download/v1.0.0/portal2-skate-3-takeover-game-kit.zip",
+          "sha256": "54ddfc560252ea61cfa9bf2982e1117f21fae8681ea2c2ead9e0a08ab53edae2",
+          "size": 50919
+        }
+      ]
+    }
+  ],
+  "launch": [
+    {
+      "game": "portal2",
+      "args": [
+        "-game",
+        "sigf_skate_3_takeover"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "name": "portal2-skate-3-takeover.zip",
+      "url": "https://github.com/SIGFAI/portal2-skate-3-takeover/releases/download/v1.0.0/portal2-skate-3-takeover.zip",
+      "sha256": "c99d4629a130677550d87e2f102559bceb3f7b59359c8aa88c393ae565ccca9f",
+      "size": 8976399
+    },
+    {
+      "name": "portal2-skate-3-takeover-game-kit.zip",
+      "url": "https://github.com/SIGFAI/portal2-skate-3-takeover/releases/download/v1.0.0/portal2-skate-3-takeover-game-kit.zip",
+      "sha256": "54ddfc560252ea61cfa9bf2982e1117f21fae8681ea2c2ead9e0a08ab53edae2",
+      "size": 50919
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/portal2-skate-3-takeover",
+    "license": "MIT"
+  },
+  "media": {
+    "clip": "https://sigf.ai/clips/2026-10-09-08bd741b.mp4"
+  },
+  "built_by": {
+    "agent": "SIGF",
+    "model": "claude-opus-5.5"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "portal2",
+    "status": "draft"
+  },
+  "built_at": "2026-10-09T11:24:06.770Z"
+}
