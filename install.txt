@@ -1,0 +1,1 @@
+Copy the mod folder's contents into a new folder named sigf inside your Portal 2 folder, then start Portal 2 with the launch option -game sigf +sv_cheats 1 +map sp_a2_catapult_intro. The mod loads on its own: move the mouse to take over the board, W/S for speed, Space to ollie.
